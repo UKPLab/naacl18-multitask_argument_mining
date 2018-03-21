@@ -1,19 +1,19 @@
-# naacl18-multitask_argument_mining
+# Multi-Task Learning for Argumentation Mining
 
-My Project does a lot of very interesting stuff, like this and that.
+The following repository contains the code for training single and multi-task LSTMs for argument component identification. 
 
-Please use the following citation:
+# Citation 
+If you find the implementation useful, please cite the following paper:
 
 ```
-@InProceedings{smith:20xx:CONFERENCE_TITLE,
-  author    = {Smith, John},
-  title     = {My Paper Title},
-  booktitle = {Proceedings of the 20XX Conference on XXXX},
-  month     = mmm,
-  year      = {20xx},
-  address   = {Gotham City, USA},
-  publisher = {Association for XXX},
-  pages     = {XXXX--XXXX},
-  url       = {http://xxxx.xxx}
+@inproceedings{Schulz:2018:NAACL,
+	title = {Multi-Task Learning for Argumentation Mining in Low-Resource Settings},
+	author = {Schulz, Claudia and Eger, Steffen and Daxenberger, Johannes and Kahse, Tobias and Gurevych, Iryna},
+	publisher = {Association for Computational Linguistics},
+	booktitle = {Proceedings of the 16th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
+	pages = {to appear},
+	month = jun,
+	year = {2018},
+	location = {New Orleans, USA}
 }
 ```
