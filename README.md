@@ -1,4 +1,4 @@
-# Multi-Task Learning for Argumentation Mining
+# Multi-Task Learning for Argumentation Mining in Low-Resource Settings
 
 The following repository contains the code for training single and multi-task LSTMs for argument component identification. 
 
