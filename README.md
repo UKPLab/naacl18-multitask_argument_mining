@@ -57,7 +57,7 @@ Install the requirements:
 
 ### Create data splits and prepare the data
 1) add datasets (BIO-labelled) to the 'corpora' folder - create a subfolder for each dataset
-2) add embedding files to the 'embeddings' folder
+2) add embedding files to the 'embeddings' folder (if later there is a problem with processing the embedding files, the first line of the embedding files may have to be removed - use embeddingFirstLine.py)
 3) create datasplits and pickle file with train size 21k tokens using splitsAndPickle_singleTask.py (automatically done for each dataset in 'corpora')
 4) create smaller test sets from the existing ones for 12k, 6k, and 1k tokens using subsplitAndPickle_singleTask.py (automatically done for each dataset)  and create pickle file
 5) create train/dev split with full size of each dataset in 'corpora' to be used for training the auxiliary AM tasks in the MTL setup using splitsFullData.py
