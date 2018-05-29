@@ -63,6 +63,8 @@ Install the requirements:
 5) create train/dev split with full size of each dataset in 'corpora' to be used for training the auxiliary AM tasks in the MTL setup using splitsFullData.py
 6) create pickle file for MTL setup using pickleOnly_multiTask.py: the dataPath needs to contain a subfolder for each dataset, where the folder of the main AM task contains the splits from 3) or 4) and the folders of the auxiliary AM tasks contain the splits from 5)
 
+In all scripts, we specify where the user has to adapt the code (mostly file paths) with 'USER ACTION NEEDED'
+
 ### Run the LSTM
 * singleTaskMain.py runs a BiLSTM with given command line parameters
 * multiTaskMain.py runs a multi-task BiLSTM with given command line parameters
