@@ -74,3 +74,6 @@ Example for running the code:
 python3 singleTaskMain.py pkl/nameOfMyPickledFile myArgDataset arg_BIO 0.25,0.25 100,50 nadam None results/experimentName.txt detailedOutput/experimentName.txt
 ```
 'arg_BIO' should not be changed when using the data processing as described before, all other parameters can be adapted, the file paths need to be changed
+
+### Data splits used in our experiments
+If you would like to check out the exact data splits used in our experiments, please get in touch.
