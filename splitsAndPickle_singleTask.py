@@ -107,7 +107,7 @@ logger.addHandler(ch)
 dataPath = dname + "/corpora"
 
 # output path for train, dev, test splits (subfolders will be created for each corpus)
-resultPath = dname + "/data"
+resultPath = dname + "/data_singleTask"
 
 # USER ACTION NEEDED
 # put embeddings here (GloVe and [Komninos & Mandhar 2016])

@@ -67,12 +67,13 @@ logger.addHandler(ch)
 
 # USER ACTION NEEDED
 # put the splits (only train.txt required) created with splitsAndPickle.py here - in subfolders for each corpus
+# if needed, change path name
 dataPath = dname + "/givenData"
 
 # USER ACTION NEEDED
-# put test.txt and dev.txt created with splitsAndPickle.py here - in subfolders for each corpus
+# put test.txt and dev.txt created with splitsAndPickle_singleTask.py here - in subfolders for each corpus
 # the smaller train split will then be added
-resultPath = dname + "/data"
+resultPath = dname + "/data_singleTask_1000"
 
 # USER ACTION NEEDED
 # put embeddings here (GloVe and [Komninos & Mandhar 2016])

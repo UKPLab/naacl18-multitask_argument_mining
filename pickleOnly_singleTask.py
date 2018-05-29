@@ -39,7 +39,8 @@ logger.addHandler(ch)
 
 # USER ACTION NEEDED
 # put train, test, dev here - in subfolders for each corpus
-dataPath = dname + "/data"
+# if needed, change path name
+dataPath = dname + "/data_singleTask"
 
 # USER ACTION NEEDED
 # put embeddings here (GloVe and [Komninos & Mandhar 2016])

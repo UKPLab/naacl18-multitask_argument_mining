@@ -104,7 +104,7 @@ logger.addHandler(ch)
 dataPath = dname + "/corpora"
 
 # output path for train, dev, test splits (subfolders will be created for each corpus)
-resultPath = dname + "/data"
+resultPath = dname + "/data_fullSplits"
 
 for dataName in os.listdir(dataPath):
     dataFolder = dataPath + "/" + dataName

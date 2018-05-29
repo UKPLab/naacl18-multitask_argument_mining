@@ -44,7 +44,8 @@ embeddingsPath = dname + "/embeddings"
 # USER ACTION NEEDED
 # make sure that dataPath contains the small train,dev,test files for dataName and
 # the full size train,dev,test for all other datasets (as created by splitsFullData.py)
-dataPath = dname + "/data"
+# if needed, change path name
+dataPath = dname + "/data_multiTask"
 
 for dataAllName in os.listdir(dataPath):
     if dataAllName != dataSmallName:
