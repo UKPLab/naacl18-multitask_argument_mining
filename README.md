@@ -31,3 +31,13 @@ https://www.tu-darmstadt.de/
 Don't hesitate to send us an e-mail or report an issue, if something is broken (and it shouldn't be) or if you have further questions.
 
 > This repository contains experimental software and is published for the sole purpose of giving additional background details on the respective publication. 
+
+
+## Project structure
+For the single and multi-task architectures, we used the implementation of Nils Reimers (NR): https://github.com/UKPLab/emnlp2017-bilstm-cnn-crf
+The code has been updated since - here you find the original code as used in our experiments:
+* neuralnets -- contains BiLISTM.py for single task experiments and MultiTaskLSTM.py for multi-task experiments (slight modification of code by NR to use scikit-learn F1 score)
+* util -- various scripts for processing data and other utilities by NR
+
+
+
