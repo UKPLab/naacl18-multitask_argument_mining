@@ -1,6 +1,6 @@
 # Multi-Task Learning for Argumentation Mining in Low-Resource Settings
 
-The following repository contains the code for training single and multi-task LSTMs for argument component identification. 
+The following repository contains the code for training single and multi-task LSTMs for argument component identification. The code allows to replicate the experiments of [our paper](http://aclweb.org/anthology/N18-2006).
 
 # Citation 
 If you find the implementation useful, please cite the following paper:
@@ -68,7 +68,7 @@ Install the requirements:
 ### Create your own data splits and prepare the data
 (obtain datasets, all of them are freely available and make sure they are all in the correct (2-column) token-BIO_class format)
 1) add datasets (BIO-labelled) to the 'corpora' folder - create a subfolder for each dataset
-2) add embedding files to the 'embeddings' folder
+2) add embedding files to the 'embeddings' folder (if later there is a problem with processing the embedding files, the first line of the embedding files may have to be removed - use embeddingFirstLine.py)
 3) create datasplits and pickle file with train size 21k tokens using splitsAndPickle_singleTask.py (automatically done for each dataset in 'corpora')
 4) create smaller test sets from the existing ones for 12k, 6k, and 1k tokens using subsplitAndPickle_singleTask.py (automatically done for each dataset)  and create pickle file
 5) create train/dev split with full size of each dataset in 'corpora' to be used for training the auxiliary AM tasks in the MTL setup using splitsFullData.py
@@ -85,3 +85,6 @@ Example for running the code:
 python3 singleTaskMain.py pkl/nameOfMyPickledFile myArgDataset arg_BIO 0.25,0.25 100,50 nadam None results/experimentName.txt detailedOutput/experimentName.txt
 ```
 'arg_BIO' should not be changed when using the data processing as described before, all other parameters can be adapted, the file paths need to be changed
+
+### Data splits used in our experiments
+If you would like to check out the exact data splits used in our experiments, please get in touch.
