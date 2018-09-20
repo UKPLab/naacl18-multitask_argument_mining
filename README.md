@@ -11,7 +11,7 @@ If you find the implementation useful, please cite the following paper:
 	author = {Schulz, Claudia and Eger, Steffen and Daxenberger, Johannes and Kahse, Tobias and Gurevych, Iryna},
 	publisher = {Association for Computational Linguistics},
 	booktitle = {Proceedings of the 16th Annual Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies},
-	pages = {to appear},
+	pages = {35--41},
 	month = jun,
 	year = {2018},
 	location = {New Orleans, USA}
@@ -38,6 +38,8 @@ For the single and multi-task architectures, we used the implementation of Nils 
 The code has been updated since - here you find the original code as used in our experiments:
 * neuralnets -- contains BiLISTM.py for single task experiments and MultiTaskLSTM.py for multi-task experiments (slight modification of code by NR to use scikit-learn F1 score)
 * util -- various scripts for processing data and other utilities by NR
+* dataSplits -- the train, dev, test splits of all datasets used for our experiments
+
 
 ## Experimental setup
 All code is run using Python 3.
@@ -55,7 +57,16 @@ Install the requirements:
 .env/bin/pip3 install -r requirements.txt
 ```
 
-### Create data splits and prepare the data
+
+### Use our data splits and prepare the data
+> If you use the data in your experiments, please cite both our NAACL 2018 paper (see above) and the respective papers that first introduced the data (these can be found in our paper).
+
+* single-task experiments: Specify the respective 1k, 6k, 12k, or 21k folder in 'dataSplits' in pickleOnly_singleTask.py and run it. This creates pickle files for all corpora (given our splits) for the specified small data scenario.
+* multi-task exeperiments: Create a folder 'data_multiTask' with a subfolder for each dataset. The folder of the main AM task contains the splits from one of the small data scenarios (e.g. from dataSplits/1k/essays) and the 5 folders of the auxiliary AM tasks contain the splits from the respecite 'fullData' folders. Run pickleOnly_multiTask.py to create a pickle file for the main AM task in the respective small data scenario.
+
+
+### Create your own data splits and prepare the data
+(obtain datasets, all of them are freely available and make sure they are all in the correct (2-column) token-BIO_class format)
 1) add datasets (BIO-labelled) to the 'corpora' folder - create a subfolder for each dataset
 2) add embedding files to the 'embeddings' folder
 3) create datasplits and pickle file with train size 21k tokens using splitsAndPickle_singleTask.py (automatically done for each dataset in 'corpora')
@@ -65,7 +76,7 @@ Install the requirements:
 
 In all scripts, we specify where the user has to adapt the code (mostly file paths) with 'USER ACTION NEEDED'
 
-### Run the LSTM
+### Run the Experiments
 * singleTaskMain.py runs a BiLSTM with given command line parameters
 * multiTaskMain.py runs a multi-task BiLSTM with given command line parameters
 

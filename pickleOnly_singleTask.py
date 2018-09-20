@@ -31,7 +31,7 @@ loggingLevel = logging.INFO
 logger = logging.getLogger()
 logger.setLevel(loggingLevel)
 
-ch = logging.FileHandler('mergedData.log')
+ch = logging.FileHandler('singleArgExperiments.log')
 ch.setLevel(loggingLevel)
 formatter = logging.Formatter('%(message)s')
 ch.setFormatter(formatter)
@@ -40,7 +40,7 @@ logger.addHandler(ch)
 # USER ACTION NEEDED
 # put train, test, dev here - in subfolders for each corpus
 # if needed, change path name
-dataPath = dname + "/data_singleTask"
+dataPath = dname + "/dataSplits/1k"
 
 # USER ACTION NEEDED
 # put embeddings here (GloVe and [Komninos & Mandhar 2016])

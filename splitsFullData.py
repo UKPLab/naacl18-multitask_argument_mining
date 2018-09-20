@@ -93,7 +93,7 @@ logger = logging.getLogger()
 logger.setLevel(loggingLevel)
 
 #ch = logging.StreamHandler(sys.stdout)
-ch = logging.FileHandler('singleArgExperiments.log')
+ch = logging.FileHandler('fullDataArgExperiments.log')
 ch.setLevel(loggingLevel)
 formatter = logging.Formatter('%(message)s')
 ch.setFormatter(formatter)

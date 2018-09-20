@@ -59,7 +59,7 @@ logger = logging.getLogger()
 logger.setLevel(loggingLevel)
 
 #ch = logging.StreamHandler(sys.stdout)
-ch = logging.FileHandler('singleArgExperimentsSmallData.log')
+ch = logging.FileHandler('singleArgExperiments_subsplits.log')
 ch.setLevel(loggingLevel)
 formatter = logging.Formatter('%(message)s')
 ch.setFormatter(formatter)
