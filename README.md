@@ -21,7 +21,7 @@ If you find the implementation useful, please cite the following paper:
 well (and better than single-task learning) when little training data is available for the main task, a common scenario in AM. Our findings challenge previous assumptions that conceptualizations across AM datasets are divergent and that MTL is difficult for semantic or higher-level tasks.
 
 
-Contact person: Claudia Schulz, schulz@ukp.informatik.tu-darmstadt.de
+Contact person: Claudia Schulz, clauschulz1812 AT_usual_GMAIL_ending
 
 https://www.ukp.tu-darmstadt.de/
 
